@@ -3459,7 +3459,11 @@ exit_early:
 
 unsigned long sched_get_busy(int cpu)
 {
+<<<<<<< HEAD
 	struct cpumask query_cpu = CPU_MASK_NONE;
+=======
+    struct cpumask query_cpu = CPU_MASK_NONE;
+>>>>>>> 703ed96c2798... cpufreq: added new governor
 	struct sched_load busy;
 
 	cpumask_set_cpu(cpu, &query_cpu);
